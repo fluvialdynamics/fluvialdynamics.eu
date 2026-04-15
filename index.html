@@ -31,36 +31,34 @@
       max-width: 900px;
     }
 
-    h1, h2, p, a {
+    h1, p, a {
       font-size: 1.2rem;
       line-height: 1.5;
       margin: 0;
     }
 
-    h1, h2 {
+    h1 {
       font-weight: 700;
+      margin-bottom: 0.8rem;
     }
 
     p, a {
       font-weight: 400;
     }
 
-    h1 {
-      margin-bottom: 0.8rem;
-    }
-
     .sub {
       max-width: 700px;
-      margin: 0 auto 2rem auto;
+      margin: 0 auto 1.6rem auto;
       color: rgba(255,255,255,0.95);
     }
 
-    .section {
-      margin-top: 1.8rem;
+    .single-section {
+      max-width: 700px;
+      margin: 0 auto;
     }
 
-    h2 {
-      margin-bottom: 0.5rem;
+    .single-section p {
+      margin-top: 0.8rem;
     }
 
     a {
@@ -73,7 +71,7 @@
     }
 
     @media (max-width: 700px) {
-      h1, h2, p, a {
+      h1, p, a {
         font-size: 1.05rem;
       }
 
@@ -82,11 +80,7 @@
       }
 
       .sub {
-        margin-bottom: 1.6rem;
-      }
-
-      .section {
-        margin-top: 1.4rem;
+        margin-bottom: 1.3rem;
       }
     }
   </style>
@@ -94,24 +88,26 @@
 <body>
   <section class="hero">
     <div class="hero-inner">
-      <h1>Fluvial Dynamics</h1>
+      <h1>Fluvial Dynamics s.r.o.</h1>
 
-      <p class="sub">
-        Hydraulic and sediment transport analysis for rivers, channels, and restoration-related studies.
-      </p>
-
-      <div class="section">
-        <h2>Services</h2>
-        <p>
-          Hydraulic analysis, sediment transport assessment, river morphology review, and technical support.
+      <div class="single-section">
+        <p class="sub">
+          Hydraulic and sediment transport analysis for rivers, channels, and restoration-related studies.
         </p>
-      </div>
 
-      <div class="section">
-        <h2>Contact</h2>
         <p>
           <a href="mailto:contact@fluvialdynamics.eu">contact@fluvialdynamics.eu</a>
         </p>
+      </div>
+      <div class="section">
+        <h2>Company details</h2>
+        <p>Fluvial Dynamics s. r. o.</p>
+        <p>[Ulica a číslo], [PSČ] [Mesto], Slovakia</p>
+        <p>IČO: [doplníš]</p>
+        <p>Registered in the Commercial Register of [doplníš súd], Section Sro, Insert No. [doplníš]</p>
+        <p>Email: <a href="mailto:contact@fluvialdynamics.eu">contact@fluvialdynamics.eu</a></p>
+        <p>Phone: [doplníš, ak chceš]</p>
+        <p>VAT ID: [doplníš iba ak si platiteľ DPH]</p>
       </div>
     </div>
   </section>
