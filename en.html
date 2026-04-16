@@ -23,6 +23,10 @@
       --legal-note-size-mobile: calc(var(--legal-font-size-mobile) - 3pt);
       --legal-text: rgba(255,255,255,0.72);
       --legal-link: rgba(255,255,255,0.88);
+
+      /* reserve visual space for the fixed legal block */
+      --legal-space: 170px;
+      --legal-space-mobile: 210px;
     }
 
     html, body {
@@ -80,6 +84,7 @@
     .hero-inner {
       width: 100%;
       max-width: 1200px;
+      transform: translateY(calc(var(--legal-space) * -0.5));
     }
 
     h1, h2, p, a {
@@ -199,6 +204,10 @@
         padding: 30px 16px;
       }
 
+      .hero-inner {
+        transform: translateY(calc(var(--legal-space-mobile) * -0.5));
+      }
+
       .sub {
         margin-bottom: 1.3rem;
       }
@@ -221,7 +230,7 @@
 </head>
 <body>
   <div class="language-switch">
-    <a href="index.html">Slovenčina</a>
+    <a href="index.html">Slovensky</a>
   </div>
 
   <section class="hero">
@@ -241,15 +250,15 @@
       <p>Fluvial Dynamics s. r. o.</p>
       <p>Zhorínska 27</p>
       <p>841 03 Bratislava</p>
-      <p>Slovakia</p>
+      <p>Slovak Republic</p>
     </div>
-    
+
     <div class="legal-contact">
       <p>Ing. Daniel Buček, PhD.</p>
       <p>tel.: 00421 907 685 682</p>
       <p>e-mail: <a href="mailto:contact@fluvialdynamics.eu">contact@fluvialdynamics.eu</a></p>
     </div>
-    
+
     <div class="legal-financial">
       <p>Company ID: 53206339</p>
       <p>IBAN: SK24 1100 0000 0029 4229 5737</p>
@@ -257,7 +266,7 @@
     </div>
 
     <p class="legal-note">
-      The company is registered in the Business Register of the City Court Bratislava III, Section: Sro, Insert No. 146781/B.
+      The company is registered in the Commercial Register of the Municipal Court Bratislava III, Section: Sro, Insert No. 146781/B.
     </p>
     <p class="legal-note" style="margin-top: 0.6rem;">
       © <span id="year"></span> Fluvial Dynamics s.r.o. All rights reserved
